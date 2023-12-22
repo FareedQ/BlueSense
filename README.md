@@ -25,4 +25,8 @@ There is a requirement file that will help install all the dependancies. Below a
 * **imultils** is being used for the videostream. It is primarly used as a wrapper to ensure the threading of the is started and stopped properly. [Details here](https://github.com/PyImageSearch/imutils/blob/master/imutils/video/videostream.py)
 * This application doesn't analyze any skin conditions as I couldn't find an appropriate skin categorization model or train one myself. I did find a [Dataset on Kaggle](https://www.kaggle.com/datasets/haroonalam16/20-skin-diseases-dataset/data) and an architecture for a [CCN on Kaggle](https://www.kaggle.com/code/chaitanya102000/skin-diseases-cnn). I also came across [this paper](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8074091/) and [another paper](https://link.springer.com/chapter/10.1007/978-981-19-8032-9_39) which has additional inspiration for a developing a classification architecture. If a classification solution needs to be built quickly then MediaPipe also have this [Model Maker](https://developers.google.com/mediapipe/solutions/model_maker) which can help build a quick solution.
 * There is a **Warning Message** that may appear in the logs depending on the device you are running the application on. This is because of the MediaPipe library [here](https://github.com/google/mediapipe/blob/master/mediapipe/gpu/gl_context.cc#L357C14-L359) which we can't easily supress.
-* Some tutorials which were very helpful in building up the skillset to use MediaPipe are https://mediapipe.readthedocs.io/en/latest/solutions/face_mesh.html and https://www.assemblyai.com/blog/mediapipe-for-dummies/
+
+## References
+A few tutorials I found very helpful on ramping up:
+  * https://mediapipe.readthedocs.io/en/latest/solutions/face_mesh.html
+  * https://www.assemblyai.com/blog/mediapipe-for-dummies/
